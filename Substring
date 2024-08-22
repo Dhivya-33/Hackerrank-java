@@ -1,0 +1,18 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        String s = in.nextLine().trim();
+        String[] indices=in.nextLine().trim().split(" ");
+        int start = Integer.parseInt(indices[0]);
+        int end = Integer.parseInt(indices[1]);
+        String substring=s.substring(start,end);
+        System.out.println(substring);
+    }
+}
